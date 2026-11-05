@@ -1,0 +1,57 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "apple.csv",
+				"folderPath": "raw",
+				"fileSystem": "factory"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "\"@timestamp,\"\"application.details.webhook.event\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.message.code\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.request.original_url\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.message.body\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.request.user_agent\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.request.method\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.request.path\"\"",
+				"type": "String"
+			},
+			{
+				"name": "\"\"application.details.webhook.data\"\"\"",
+				"type": "String"
+			}
+		]
+	}
+}
