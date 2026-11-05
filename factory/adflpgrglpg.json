@@ -1,0 +1,15 @@
+{
+	"name": "adflpgrglpg",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cc2b311d-912f-45f7-b943-eea37cc35f32",
+		"tenantId": "1b976a07-e24d-46e9-9ff0-d07f58fa53bd"
+	}
+}
